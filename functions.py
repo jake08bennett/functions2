@@ -80,7 +80,30 @@ print successful_squirrel_party(False,70) #False
 print successful_squirrel_party(False,20) #False
 print successful_squirrel_party(False,50) #True
 
+
+
+print "\n"
 # TODO - write ticket
+
+def ticket(a, b, c):
+	if (a+b) == 10 or (c+b) == 10 or (a+c) == 10:
+		return 10
+	elif ((a+b) - (b+c)) >= 10:
+		return 5
+	elif ((a+b) - (a+c)) >= 10:
+		return 5
+	else:
+		return 0
+
+
+
+
+print ticket(10, 0, 4) #10
+print ticket(13, 0, 10) #10
+print ticket(0, 4, 10) #10
+print ticket(30, 0, 15) #5
+print ticket(15, 15, 0) #5
+print ticket(2, 2, 2) #0
 
 # TODO - write in_order
 
