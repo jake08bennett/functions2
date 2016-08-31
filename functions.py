@@ -16,6 +16,27 @@
 
 
 # TODO - write elevenish
+
+def elevenish(n):
+	if n % 11 == 0:
+		return True
+	elif n % 11 == 1:
+		return True
+	else:
+		return False
+		
+
+
+
+
+print elevenish(11) #True
+print elevenish(12) #True
+print elevenish(13) #False
+print elevenish(22) #True
+print elevenish(23) #False
+print elevenish(5) #False
+
+
 	
 # TODO - write ice_cream_party
 
