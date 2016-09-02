@@ -105,11 +105,64 @@ print ticket(30, 0, 15) #5
 print ticket(15, 15, 0) #5
 print ticket(2, 2, 2) #0
 
+
+print "\n"
 # TODO - write in_order
 
+def in_order(a, b, c, bOk) :
+    if (bOk):
+    	return b < c
+    else:
+    	return a < b and b < c
+
+
+print in_order(1,2,3, False)#True
+print in_order(5,2,3, True)#True
+print in_order(1,4,2, False)#False
+print in_order(1,2,3, True)#True
+print in_order(3,2,1, True)#false
+print in_order(3,5,1, True)#false
+
+
+print "\n"
 # TODO - write less_by_ten
 
+def less_by_ten(a,b,c):
+	if (a-b) >= 10 or (c-b) >= 10 or (b-a) >= 10 or (b-c) >= 10 or (a-c) >= 10 or (c-a) >= 10:
+		return True
+	else:
+		return False
+
+print less_by_ten(20,10,0)#True
+print less_by_ten(10,10,10)#False
+print less_by_ten(0,5,15)#True
+
+print "\n"
 # TODO - write fizz_string
+def fizz_string(s):
+	if s.startswith ("fb"):
+ 		return "Fizzbuzz"
+ 	if s.startswith ("f"):
+ 		return "Fizz"
+ 	if s.startswith ("b"):
+ 		return "Buzz"
+ 	else:
+ 		return "S"
+
+print fizz_string("fondue")  
+print fizz_string("british") 
+print fizz_string("fb") 
+print fizz_string("dfs;jkl")
+
+print "\n"
+# TODO - write first_last_six
+def first_last_six(list):
+	return list.startswith("6") or list.endswith("6")
+
+
+print first_last_six("60001")#return true
+print first_last_six("10006")#return true
+print first_last_six("10001")#return false
 
 # TODO - write first_last_six
 
